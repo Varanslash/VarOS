@@ -1,6 +1,6 @@
 $filename = Read-Host -Prompt "What file would you like to play? (Do not include extension.)"
 
-$fileString = Get-Content -Path "C:\Users\$env:USERNAME\Downloads\VarOS\Userspace\Apps\AMP3_Player\Songs\$filename.amp3" -Raw
+$fileString = Get-Content -Path "C:\Users\$env:USERNAME\Downloads\BaushaOS\Userspace\Apps\AMP3_Player\Songs\$filename.amp3" -Raw
 $notes = $fileString -split "\n"
 foreach ($line in $notes) {
     if ($line.StartsWith("#")) {
@@ -22,4 +22,5 @@ foreach ($line in $notes) {
         $note2 = $note[1] -as [int]
         [Console]::Beep($note1, $note2)
     }
+
 }
