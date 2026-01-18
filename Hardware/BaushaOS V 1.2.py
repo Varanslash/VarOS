@@ -1,5 +1,4 @@
 # Boot Code
-# pyright: reportMissingImports=false, reportMissingModuleSource=false
 # Every Import Known To Man
 
 import machine
